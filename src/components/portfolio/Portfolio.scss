@@ -7,7 +7,15 @@
 
     h1{
         font-size: 50px;
+
+        @include mobile{
+            font-size: 20px;
+          }
+
     }
+
+
+
     ul{
         margin: 10px;
         padding: 0;
@@ -27,7 +35,12 @@
         //     height: 190px;
         //     width: 330px;
         //     border-radius: 7px;
-        // }
+        
+    // }
+
+    @include mobile{
+        width: 100%;
+      }
         .item{
             width: 250px;
             height: 160px;
@@ -42,6 +55,13 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+
+
+            @include mobile{
+                width: 130px;
+                height: 100px;
+              }
+
             h3{
               position: absolute;
               font-size: 20px;
